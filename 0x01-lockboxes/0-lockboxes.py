@@ -1,3 +1,8 @@
+#!/usr/bin/python3
+'''A module for working with lockboxes.
+'''
+
+
 def canUnlockAll(boxes):
     n = len(boxes)
     visited = [False] * n  # Keeps track of visited boxes
@@ -15,7 +20,3 @@ def canUnlockAll(boxes):
 
     # If all boxes have been visited, return True, else return False
     return all(visited)
-
-# Example usage:
-boxes = [[1], [2], [3], [0]]
-print(canUnlockAll(boxes))  # Output: True
