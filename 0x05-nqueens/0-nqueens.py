@@ -3,8 +3,8 @@
 import sys
 
 
-if len(sys.argv) > 2 or len(sys.argv) < 2:
-    print("Usage:n nqueens N")
+if len(sys.argv) != 2:
+    print("Usage: nqueens N")
     exit(1)
 
 if not sys.argv[1].isdigit():
